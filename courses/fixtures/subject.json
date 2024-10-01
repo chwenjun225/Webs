@@ -35,14 +35,6 @@
   "model": "courses.subject",
   "pk": 5,
   "fields": {
-    "title": "Geography",
-    "slug": "geography"
-  }
-},
-{
-  "model": "courses.subject",
-  "pk": 6,
-  "fields": {
     "title": "History",
     "slug": "history"
   }
