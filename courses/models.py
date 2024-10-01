@@ -24,10 +24,10 @@ class Course(models.Model):
         related_name='courses', 
         on_delete=models.CASCADE, 
     )
-    title = models.CharField(max_length=200)
+    title = models.CharField(max_length=200) 
     slug = models.SlugField(max_length=200, unique=True)
-    overview = models.TextField()
-    created = models.DateTimeField(auto_now_add=True)
+    overview = models.TextField() 
+    created = models.DateTimeField(auto_now_add=True) 
     class Meta:
         ordering = ['-created']
     def __str__(self):
@@ -39,7 +39,7 @@ class Module(models.Model):
         related_name='modules', 
         on_delete=models.CASCADE, 
     )
-    title = models.CharField(max_length=200)
+    title = models.CharField(max_length=200) 
     description = models.TextField(blank=True)
     order = OrderField(blank=True, for_fields=['course'])
     class Meta:
@@ -69,10 +69,10 @@ class Content(models.Model):
 class ItemBase(models.Model):
     owner = models.ForeignKey(
         User, 
-        related_name="%(class)s_related", 
+        related_name='%(class)s_related',
         on_delete=models.CASCADE, 
     )
-    title = models.CharField(max_length=250)
+    title = models.CharField(max_length=250) 
     created = models.DateTimeField(auto_now_add=True)
     updated = models.DateTimeField(auto_now=True)
     class Meta:

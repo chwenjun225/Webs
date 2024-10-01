@@ -4,7 +4,7 @@
     <head>
         <meta charset="utf-8">
         <title>{% block title %}Educa{% endblock %}</title>
-        <link rel="stylesheet" href="{% static 'css/base.css' %}">
+        <link href="{% static 'css/base.css' %}" rel="stylesheet">
     </head>
     <body>
         <div id="header">
@@ -14,22 +14,20 @@
                     <li>
                         <form action="{% url 'logout' %}" method="post">
                             <button type="submit">Sign out</button>
+                            {% csrf_token %}
                         </form>
                     </li>
                 {% else %}
-                    <li>
-                        <a href="{% url 'login' %}">Sign in</a>
-                    </li>
+                    <li><a href="{% url 'login' %}">Sign in</a></li>
                 {% endif %}
             </ul>
         </div>
         <div id="content">
             {% block content %}
-
             {% endblock %}
         </div>
         <script>
-            document.addEventListener('DOMContentLoaded', (event) =>{
+            document.addEventListener('DOMContentLoaded', (event) => {
                 // DOM Loaded 
                 {% block domready %}
                 {% endblock %}
