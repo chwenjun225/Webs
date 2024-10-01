@@ -19,9 +19,10 @@ from django.conf.urls.static import static
 
 from django.contrib import admin
 from django.contrib.auth import views as auth_views 
-from django.urls import path
+from django.urls import path, include
 
 urlpatterns = [
+    path('course/', include('courses.urls')), 
     path('admin/', admin.site.urls),
     path(
         'accounts/login/', 
