@@ -1,2 +1,1 @@
-# Educa
-Example Django for E-Learning Project
+Example Django web projectst
