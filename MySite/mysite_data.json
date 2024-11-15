@@ -1,0 +1,857 @@
+[
+{
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+        "action_time": "2024-11-14T07:52:56.261Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "1",
+        "object_repr": "Kỷ niệm 80 năm Ngày thành lập QĐND Việt Nam và khai trương Văn phòng Tùy viên Quốc phòng Việt Nam tại Chile",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+        "action_time": "2024-11-14T09:18:09.373Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "2",
+        "object_repr": "Ông Thọ Hướng Dẫn Nấu Những Món Hấp Vừa Lạ Vừa Ngon",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+        "action_time": "2024-11-14T09:19:51.882Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "3",
+        "object_repr": "Chủ tịch nước Lương Cường nhận huân chương 'Mặt trời Peru'",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 4,
+    "fields": {
+        "action_time": "2024-11-14T09:20:19.865Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "4",
+        "object_repr": "Thông điệp từ cuộc gặp bên lò sưởi của ông Trump - ông Biden",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 5,
+    "fields": {
+        "action_time": "2024-11-15T14:18:50.248Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "2",
+        "object_repr": "jazz",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 6,
+    "fields": {
+        "action_time": "2024-11-15T14:19:02.178Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "2",
+        "object_repr": "jazz, music",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Name\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 7,
+    "fields": {
+        "action_time": "2024-11-15T14:19:15.383Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "2",
+        "object_repr": "jazz",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Name\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 8,
+    "fields": {
+        "action_time": "2024-11-15T14:19:57.484Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "1",
+        "object_repr": "Kỷ niệm 80 năm Ngày thành lập QĐND Việt Nam và khai trương Văn phòng Tùy viên Quốc phòng Việt Nam tại Chile",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 9,
+    "fields": {
+        "action_time": "2024-11-15T14:37:26.697Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "1",
+        "object_repr": "Kỷ niệm 80 năm Ngày thành lập QĐND Việt Nam và khai trương Văn phòng Tùy viên Quốc phòng Việt Nam tại Chile",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 10,
+    "fields": {
+        "action_time": "2024-11-15T14:37:26.702Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "2",
+        "object_repr": "Ông Thọ Hướng Dẫn Nấu Những Món Hấp Vừa Lạ Vừa Ngon",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 11,
+    "fields": {
+        "action_time": "2024-11-15T14:37:26.704Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "3",
+        "object_repr": "Chủ tịch nước Lương Cường nhận huân chương 'Mặt trời Peru'",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 12,
+    "fields": {
+        "action_time": "2024-11-15T14:37:26.707Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "4",
+        "object_repr": "Thông điệp từ cuộc gặp bên lò sưởi của ông Trump - ông Biden",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 13,
+    "fields": {
+        "action_time": "2024-11-15T14:39:36.956Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "5",
+        "object_repr": "Sam Fender Releases First New Music Since 2022 With War On Drugs-Produced Single ‘People Watching’",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 14,
+    "fields": {
+        "action_time": "2024-11-15T14:40:01.139Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "6",
+        "object_repr": "Pharrell Says He’s Unbothered by Drake’s Disses After the OVO Rapper Bought His Jewelry",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 15,
+    "fields": {
+        "action_time": "2024-11-15T14:40:05.699Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "6",
+        "object_repr": "Pharrell Says He’s Unbothered by Drake’s Disses After the OVO Rapper Bought His Jewelry",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 16,
+    "fields": {
+        "action_time": "2024-11-15T14:40:36.345Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "7",
+        "object_repr": "Snoop Dogg & Dr. Dre Return to R&B/Hip-Hop Airplay Chart for First Time in 13 Years",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 17,
+    "fields": {
+        "action_time": "2024-11-15T14:41:10.845Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "8",
+        "object_repr": "Cher Says Meeting Sonny Bono ‘Wasn’t Love at First Sight’ Because He Didn’t Find Her ‘Particularly Attractive’",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 1,
+    "fields": {
+        "name": "Can add log entry",
+        "content_type": 1,
+        "codename": "add_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 2,
+    "fields": {
+        "name": "Can change log entry",
+        "content_type": 1,
+        "codename": "change_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 3,
+    "fields": {
+        "name": "Can delete log entry",
+        "content_type": 1,
+        "codename": "delete_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 4,
+    "fields": {
+        "name": "Can view log entry",
+        "content_type": 1,
+        "codename": "view_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 5,
+    "fields": {
+        "name": "Can add permission",
+        "content_type": 2,
+        "codename": "add_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 6,
+    "fields": {
+        "name": "Can change permission",
+        "content_type": 2,
+        "codename": "change_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 7,
+    "fields": {
+        "name": "Can delete permission",
+        "content_type": 2,
+        "codename": "delete_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 8,
+    "fields": {
+        "name": "Can view permission",
+        "content_type": 2,
+        "codename": "view_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 9,
+    "fields": {
+        "name": "Can add group",
+        "content_type": 3,
+        "codename": "add_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 10,
+    "fields": {
+        "name": "Can change group",
+        "content_type": 3,
+        "codename": "change_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 11,
+    "fields": {
+        "name": "Can delete group",
+        "content_type": 3,
+        "codename": "delete_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 12,
+    "fields": {
+        "name": "Can view group",
+        "content_type": 3,
+        "codename": "view_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 13,
+    "fields": {
+        "name": "Can add user",
+        "content_type": 4,
+        "codename": "add_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 14,
+    "fields": {
+        "name": "Can change user",
+        "content_type": 4,
+        "codename": "change_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 15,
+    "fields": {
+        "name": "Can delete user",
+        "content_type": 4,
+        "codename": "delete_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 16,
+    "fields": {
+        "name": "Can view user",
+        "content_type": 4,
+        "codename": "view_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 17,
+    "fields": {
+        "name": "Can add content type",
+        "content_type": 5,
+        "codename": "add_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 18,
+    "fields": {
+        "name": "Can change content type",
+        "content_type": 5,
+        "codename": "change_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 19,
+    "fields": {
+        "name": "Can delete content type",
+        "content_type": 5,
+        "codename": "delete_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 20,
+    "fields": {
+        "name": "Can view content type",
+        "content_type": 5,
+        "codename": "view_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 21,
+    "fields": {
+        "name": "Can add session",
+        "content_type": 6,
+        "codename": "add_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 22,
+    "fields": {
+        "name": "Can change session",
+        "content_type": 6,
+        "codename": "change_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 23,
+    "fields": {
+        "name": "Can delete session",
+        "content_type": 6,
+        "codename": "delete_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 24,
+    "fields": {
+        "name": "Can view session",
+        "content_type": 6,
+        "codename": "view_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 25,
+    "fields": {
+        "name": "Can add post",
+        "content_type": 7,
+        "codename": "add_post"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 26,
+    "fields": {
+        "name": "Can change post",
+        "content_type": 7,
+        "codename": "change_post"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 27,
+    "fields": {
+        "name": "Can delete post",
+        "content_type": 7,
+        "codename": "delete_post"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 28,
+    "fields": {
+        "name": "Can view post",
+        "content_type": 7,
+        "codename": "view_post"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 29,
+    "fields": {
+        "name": "Can add comment",
+        "content_type": 8,
+        "codename": "add_comment"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 30,
+    "fields": {
+        "name": "Can change comment",
+        "content_type": 8,
+        "codename": "change_comment"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 31,
+    "fields": {
+        "name": "Can delete comment",
+        "content_type": 8,
+        "codename": "delete_comment"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 32,
+    "fields": {
+        "name": "Can view comment",
+        "content_type": 8,
+        "codename": "view_comment"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 33,
+    "fields": {
+        "name": "Can add tag",
+        "content_type": 9,
+        "codename": "add_tag"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 34,
+    "fields": {
+        "name": "Can change tag",
+        "content_type": 9,
+        "codename": "change_tag"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 35,
+    "fields": {
+        "name": "Can delete tag",
+        "content_type": 9,
+        "codename": "delete_tag"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 36,
+    "fields": {
+        "name": "Can view tag",
+        "content_type": 9,
+        "codename": "view_tag"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 37,
+    "fields": {
+        "name": "Can add tagged item",
+        "content_type": 10,
+        "codename": "add_taggeditem"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 38,
+    "fields": {
+        "name": "Can change tagged item",
+        "content_type": 10,
+        "codename": "change_taggeditem"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 39,
+    "fields": {
+        "name": "Can delete tagged item",
+        "content_type": 10,
+        "codename": "delete_taggeditem"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 40,
+    "fields": {
+        "name": "Can view tagged item",
+        "content_type": 10,
+        "codename": "view_taggeditem"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 41,
+    "fields": {
+        "name": "Can add site",
+        "content_type": 11,
+        "codename": "add_site"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 42,
+    "fields": {
+        "name": "Can change site",
+        "content_type": 11,
+        "codename": "change_site"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 43,
+    "fields": {
+        "name": "Can delete site",
+        "content_type": 11,
+        "codename": "delete_site"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 44,
+    "fields": {
+        "name": "Can view site",
+        "content_type": 11,
+        "codename": "view_site"
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+        "password": "pbkdf2_sha256$390000$Yom7erJNfSkpkGcRYI4HtP$nOKVYI8WiimeZEg/RI3pONXxiKqJH7CsiAvjZvSCYWI=",
+        "last_login": "2024-11-14T07:49:29.105Z",
+        "is_superuser": true,
+        "username": "tranvantuan",
+        "first_name": "",
+        "last_name": "",
+        "email": "trantuan22052k@gmail.com",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2024-11-14T07:49:00.686Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 1,
+    "fields": {
+        "app_label": "admin",
+        "model": "logentry"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 2,
+    "fields": {
+        "app_label": "auth",
+        "model": "permission"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 3,
+    "fields": {
+        "app_label": "auth",
+        "model": "group"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 4,
+    "fields": {
+        "app_label": "auth",
+        "model": "user"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 5,
+    "fields": {
+        "app_label": "contenttypes",
+        "model": "contenttype"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 6,
+    "fields": {
+        "app_label": "sessions",
+        "model": "session"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 7,
+    "fields": {
+        "app_label": "blog",
+        "model": "post"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 8,
+    "fields": {
+        "app_label": "blog",
+        "model": "comment"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 9,
+    "fields": {
+        "app_label": "taggit",
+        "model": "tag"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 10,
+    "fields": {
+        "app_label": "taggit",
+        "model": "taggeditem"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 11,
+    "fields": {
+        "app_label": "sites",
+        "model": "site"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "0q55nmamcdbdlyd8faw1w2zonwt09krc",
+    "fields": {
+        "session_data": ".eJxVjMsOwiAQRf-FtSEzNLxcuvcbyMCAVA0kpV0Z_12bdKHbe865LxFoW2vYRl7CzOIsUJx-t0jpkdsO-E7t1mXqbV3mKHdFHnTIa-f8vBzu30GlUb_1lDSQQ6th8hrdBEUb6wCZwFtjTcyakvIWIypluRADK218hgIIYMT7A6ZKNnA:1tBUbZ:VDefkJI5IcUIHIf2dmuvq0O-kS6tUtqU2WgrODhIELw",
+        "expire_date": "2024-11-28T07:49:29.109Z"
+    }
+},
+{
+    "model": "sites.site",
+    "pk": 1,
+    "fields": {
+        "domain": "example.com",
+        "name": "example.com"
+    }
+},
+{
+    "model": "blog.post",
+    "pk": 5,
+    "fields": {
+        "title": "Sam Fender Releases First New Music Since 2022 With War On Drugs-Produced Single ‘People Watching’",
+        "slug": "sam-fender-releases-first-new-music-since-2022-with-war-on-drugs-produced-single-people-watching",
+        "author": 1,
+        "body": "Earlier this week on his Instagram, Fender opened up about the upcoming LP and the inspiration. “It’s kind of ironic because she [Orwin] was the one that gave me the confidence to go on stage… now an entire song (and album) connects to her,” he wrote.\r\n\r\nSharing the artwork, he added: “Me and the band have picked away at these songs for the last couple of years, we recorded so much material in that time and deliberated long and hard over what came next. We settled on this collection for our next outing. Special thanks to Dean and Joe who have been with me every step of the way, they are incredible producers in their own right and I’m eternally proud and grateful for them both. The band has really evolved in this time, I’m a lucky f–ker to be surrounded by such a talented bunch.”\r\n\r\nIn December, Fender will kick off his first full U.K and Ireland tour, beginning on Dec.2 in Dublin, Ireland, followed by arena shows in London, Manchester, Birmingham and more. A wider European tour will take place in 2025 with dates set to be announced in North America and beyond.",
+        "publish": "2024-11-15T14:38:46Z",
+        "created": "2024-11-15T14:39:36.954Z",
+        "updated": "2024-11-15T14:39:36.954Z",
+        "status": "DF"
+    }
+},
+{
+    "model": "blog.post",
+    "pk": 6,
+    "fields": {
+        "title": "Pharrell Says He’s Unbothered by Drake’s Disses After the OVO Rapper Bought His Jewelry",
+        "slug": "pharrell-says-hes-unbothered-by-drakes-disses-after-the-ovo-rapper-bought-his-jewelry",
+        "author": 1,
+        "body": "“No, because I think beyond all of the on-goings, at the heart of all of it, he’s a fan of music,” P said of Drake making the purchase. “He’s a fan of the history of what it is, and I happen to be a part of that, and those artifacts are a part of it.”\r\n\r\nPharrell was tight-lipped when questioned about the Drake disses and how “it struck him.”\r\n\r\n“It didn’t,” he replied. “No.”\r\n\r\nOn a broader scale, the Louis Vuitton Men’s Creative Director explained how letting go of all the jewelry in the auction was his way of disconnecting from the value of the items.\r\n\r\n“Or not. I guess some things are not for me to understand. When you let things go, a huge part of it is actually letting go,” he added. “Not just of the physical item, but letting go of your connection to what it’s supposed to mean, or the memory.”\r\n\r\nP continued, “You’re literally letting them go. That was the purpose. It’s like when people sell something and they go, ‘I just want to make sure you take care of it because this is my baby.’ And I’m like, ‘No, no, no.’ This is not my baby. That’s why I’m letting it go.”\r\n\r\nDrake jabs at Pharrell on Utopia‘s “Meltdown” with Travis Scott. “I melt down the chains that I bought from yo’ boss/ Give a f–k about all of that heritage s–t,” he raps.\r\n\r\nPharrell even found himself in the middle of the Drake and Kendrick Lamar feud. Lamar stuck up for the superproducer on “Euphoria.” “I don’t like you poppin’ s–t at Pharrell, for him, I inherit the beef/ Yeah, fuck all that pushin’ P, let me see you push a T,” he spews.\r\n\r\nDrake then directly responded on “Family Matters” when baiting Kendrick to come get his legacy — in this case the chains — out of his mansion. “You wanna take up for Pharrell/ Then come get his legacy out of my house,” the OVO boss replied.",
+        "publish": "2024-11-15T14:39:38Z",
+        "created": "2024-11-15T14:40:01.136Z",
+        "updated": "2024-11-15T14:40:05.697Z",
+        "status": "PB"
+    }
+},
+{
+    "model": "blog.post",
+    "pk": 7,
+    "fields": {
+        "title": "Snoop Dogg & Dr. Dre Return to R&B/Hip-Hop Airplay Chart for First Time in 13 Years",
+        "slug": "snoop-dogg-dr-dre-return-to-rbhip-hop-airplay-chart-for-first-time-in-13-years",
+        "author": 1,
+        "body": "“Gorgeous” reunites Snoop Dogg, the multi-platinum rapper, and Dr. Dre, a hitmaking producer and rapper in his own right, on the chart for the first time since “Kush,” a Dr. Dre track featuring Snoop Dogg and Akon, reached No. 43 in 2011. The new hit arrives with 3 million U.S. audience impressions in the tracking week of Nov. 1 -7, according to Luminate. Its strongest support came from a pair of Midwest stations, WHHH-FM in Indianapolis. and WIZF-FM in Cincinnati, while KRRL-FM in Los Angeles – a hometown station for all three performers – ranked third.\r\n\r\nWith “Gorgeous,” Snoop Dogg collects his 69th credited appearance to the R&B/Hip-Hop Airplay chart, Dr. Dre lands his 34th visit and Jhene Aiko notches her 16th entry. Notably, Aiko extends a streak of having at least one song on the chart every year since her debut on the list in 2013, when she and Lil Wayne featured on Big Sean’s “Beware.”\r\n\r\nPlus, “Gorgeous” rewrites Dr. Dre and Aiko’s career-best debut ranks among their R&B/Hip-Hop Airplay hits, while Snoop Dogg falls one spot shy of equaling his best. The rapper and Ball Greezy guested on Lil’ Duval’s “Smile (Living My Best Life),” which opened at No. 28 in 2018.\r\n\r\nReleased Nov. 1, “Gorgeous” previews Snoop Dogg’s forthcoming album, Missionary, which Dr. Dre will produce. The new LP, due Dec. 13, marks the first full-length collaboration from the pair since their work on Snoop Dogg’s debut album, Doggystyle. The set, which contains classic tracks including “Gin and Juice” and “What’s My Name?” was released in 1993, one year after Dr. Dre’s own debut solo release, The Chronic. Both projects were instrumental in establishing the Los Angeles area as a hip-hop powerhouse and rivaling the New York-centered East Coast for commercial dominance and artistic influence.\r\n\r\nElsewhere, “Gorgeous” begins at No. 34 on the plays-based Mainstream R&B/Hip-Hop Airplay chart and at No. 26 on Rhythmic Airplay.",
+        "publish": "2024-11-15T14:40:13Z",
+        "created": "2024-11-15T14:40:36.342Z",
+        "updated": "2024-11-15T14:40:36.342Z",
+        "status": "PB"
+    }
+},
+{
+    "model": "blog.post",
+    "pk": 8,
+    "fields": {
+        "title": "Cher Says Meeting Sonny Bono ‘Wasn’t Love at First Sight’ Because He Didn’t Find Her ‘Particularly Attractive’",
+        "slug": "cher-says-meeting-sonny-bono-wasnt-love-at-first-sight-because-he-didnt-find-her-particularly-attractive",
+        "author": 1,
+        "body": "All Cher ever needed was Sonny Bono — but for his part, it took the late singer-songwriter a little more time to fall for his famous ex-wife and collaborator.\r\n\r\nIn a new interview with CBS Sunday Morning, the “If I Could Turn Back Time” musician gave her unfiltered side of the story of first time crossing paths with her Sonny & Cher counterpart. “I thought it was like when Tony met Maria,” she said, recalling how she met him at a coffee shop in 1962. “I mean, everybody disappeared.”\r\n\r\nBut while the “Believe” artist was all about Bono from the start, she says he preferred her friend. “He said, ‘You know, you can come and stay with me,'” she reflected. “And I was like, ‘Okay, you know.’ And he went, ‘No, no, I don’t find you particularly attractive.’ So, I was upset and happy at the same time.”\r\n\r\nCher was famously 16 when she met a then-27-year-old Sonny, with the couple eventually getting married in ’64 and rising to fame via their husband-and-wife band. They split up a decade later and finalized their divorced in 1975, and the former politician died in a 1998 skiing accident at age 62.\r\n\r\nWhile speaking to CBS, Cher also disputed that their age gap ever felt “strange.” “He was kind of childish,” she said. “He got to be with me … because I didn’t expect anything. I didn’t want money. I didn’t think about anything, you know. And all these other women that were his age, they wanted him to be grownup.”\r\n\r\nAfter the dissolution of Sonny & Cher, the Burlesque star nurtured a successful solo career that was recently celebrated by the Rock & Roll Hall of Fame, which inducted her into its 2024 class in October. “I have a kind love hate relationship [with the Rock Hall],” she told Billboard at the time. “Because I thought, ‘What do I have to f–king do , you know, to be inducted into this place? What do you have to do to be a part of it?’”\r\n\r\nAlso in October, Cher lead an all-female lineup of performers at the Victoria’s Secret Fashion Show. LISA of BLACKPINK also took the catwalk, as did Tyla.\r\n\r\nCher is now gearing up to release the first part of her autobiography, Cher: The Memoir, Nov. 19. It’s expected to chronicle her childhood and tumultuous marriage to Bono, while the second volume is slated for 2025.",
+        "publish": "2024-11-15T14:40:38Z",
+        "created": "2024-11-15T14:41:10.843Z",
+        "updated": "2024-11-15T14:41:10.843Z",
+        "status": "PB"
+    }
+},
+{
+    "model": "taggit.tag",
+    "pk": 1,
+    "fields": {
+        "name": "music",
+        "slug": "music"
+    }
+},
+{
+    "model": "taggit.tag",
+    "pk": 2,
+    "fields": {
+        "name": "jazz",
+        "slug": "jazz"
+    }
+},
+{
+    "model": "taggit.tag",
+    "pk": 3,
+    "fields": {
+        "name": "django",
+        "slug": "django"
+    }
+},
+{
+    "model": "taggit.taggeditem",
+    "pk": 4,
+    "fields": {
+        "tag": 1,
+        "content_type": 7,
+        "object_id": 5
+    }
+},
+{
+    "model": "taggit.taggeditem",
+    "pk": 5,
+    "fields": {
+        "tag": 2,
+        "content_type": 7,
+        "object_id": 6
+    }
+},
+{
+    "model": "taggit.taggeditem",
+    "pk": 6,
+    "fields": {
+        "tag": 1,
+        "content_type": 7,
+        "object_id": 7
+    }
+},
+{
+    "model": "taggit.taggeditem",
+    "pk": 7,
+    "fields": {
+        "tag": 1,
+        "content_type": 7,
+        "object_id": 8
+    }
+}
+]
