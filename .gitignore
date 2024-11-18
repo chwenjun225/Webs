@@ -1,6 +1,7 @@
 # The things
 *.crt
 *.key
+media/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
