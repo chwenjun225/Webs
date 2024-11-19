@@ -32,3 +32,4 @@ def order_create(request):
 		'orders/order/create.html',
 		{'cart': cart, 'form': form}
 	)
+# TODO: https://learning.oreilly.com/library/view/django-5-by/9781805125457/Text/Chapter_09.xhtml#_idParaDest-258
