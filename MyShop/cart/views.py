@@ -40,3 +40,5 @@ def cart_detail(request):
 		'coupon_apply_form': coupon_apply_form, 
 		}
 	)
+
+# TODO: https://learning.oreilly.com/library/view/django-5-by/9781805125457/Text/Chapter_10.xhtml#_idParaDest-289
