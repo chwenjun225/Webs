@@ -8,10 +8,8 @@ class Category(TranslatableModel):
 		slug = models.SlugField(max_length=200, unique=True)
 	)
 	class Meta:
-		ordering = ['name']
-		indexes = [
-			models.Index(fields=['name']),
-		]
+		# ordering = ['name']
+		# indexes = [models.Index(fields=['name']), ]
 		verbose_name = 'category'
 		verbose_name_plural = 'categories'
 	def __str__(self):
@@ -36,8 +34,8 @@ class Product(TranslatableModel):
 	class Meta:
 		ordering = ['name']
 		indexes = [
-			models.Index(fields=['id', 'slug']),
-			models.Index(fields=['name']),
+			# models.Index(fields=['id', 'slug']),
+			# models.Index(fields=['name']),
 			models.Index(fields=['-created']),
 		]
 	def __str__(self):
