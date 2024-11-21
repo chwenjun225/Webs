@@ -3,6 +3,7 @@ from django.db import models
 from decimal import Decimal
 from django.core.validators import MaxValueValidator, MinValueValidator
 from coupons.models import Coupon
+from django.utils.translation import gettext_lazy as _
 
 class Order(models.Model):
 	first_name = models.CharField(max_length=50)
