@@ -1,3 +1,9 @@
 from django.shortcuts import render
 
-# Create your views here.
+from .models import Musician
+
+def musicians(request):
+    data = {
+        'musicians': Musician.objects.all().order_by('last_name'), 
+    }
+    return render(request, "musicians.html", data)
