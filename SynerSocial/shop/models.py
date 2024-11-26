@@ -27,7 +27,7 @@ class Product(models.Model):
 	name = models.CharField(max_length=200)
 	slug = models.SlugField(max_length=200)
 	image = models.ImageField(
-		upload_to='products_%Y_%m_%d',
+		upload_to='products/%Y_%m_%d',
 		blank=True
 	)
 	description = models.TextField(blank=True)
