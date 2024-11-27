@@ -10,6 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 
+from decouple import config
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -39,6 +40,7 @@ INSTALLED_APPS = [
 	'django.contrib.staticfiles',
 	'cart.apps.CartConfig',
 	'orders.apps.OrdersConfig',
+    'payment.apps.PaymentConfig', 
 	'shop.apps.ShopConfig',
 ]
 
@@ -135,3 +137,7 @@ CART_SESSION_ID = 'cart'
 # emails to the console by adding the following setting to the settings.py 
 # file.
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+STRIPE_PUBLISHABLE_KEY = config('STRIPE_PUBLISHABLE_KEY')
+STRIPE_SECRET_KEY = config('STRIPE_SECRET_KEY')
+STRIPE_API_VERSION = '2024-11-27'
