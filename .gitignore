@@ -2,6 +2,7 @@
 *.crt
 *.key
 media/
+from_3rdparty/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
