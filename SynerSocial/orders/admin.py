@@ -3,7 +3,12 @@ import datetime
 from django.http import HttpResponse
 from django.utils.safestring import mark_safe
 from django.contrib import admin
+from django.urls import reverse
 from .models import Order, OrderItem
+
+def order_detail(obj):
+	url = reverse('orders:admin_order_detail', args=[obj.id])
+	return mark_safe(f'<a href="{url}">View</a>')
 
 def export_to_csv(modeladmin, request, queryset):
 	opts = modeladmin.model._meta
@@ -44,6 +49,11 @@ class OrderItemInline(admin.TabularInline):
 	model = OrderItem
 	raw_id_fields = ['product']
 
+def order_pdf(obj):
+	url = reverse('orders:admin_order_pdf', args=[obj.id])
+	return mark_safe(f'<a href="{url}">PDF</a>')
+order_pdf.short_description = 'Invoice'
+
 @admin.register(Order)
 class OrderAdmin(admin.ModelAdmin):
 	list_display = [
@@ -57,7 +67,9 @@ class OrderAdmin(admin.ModelAdmin):
 		'paid',
 		order_payment, 
 		'created',
-		'updated'
+		'updated', 
+		order_detail, 
+		order_pdf, 
 	]
 	list_filter = ['paid', 'created', 'updated']
 	inlines = [OrderItemInline]
