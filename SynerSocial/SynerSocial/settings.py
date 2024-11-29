@@ -10,6 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 
+from django.utils.translation import gettext_lazy as _
 from decouple import config
 from pathlib import Path
 
@@ -42,12 +43,13 @@ INSTALLED_APPS = [
 	'orders.apps.OrdersConfig',
 	'payment.apps.PaymentConfig', 
 	'shop.apps.ShopConfig',
-    'coupons.apps.CouponsConfig', 
+	'coupons.apps.CouponsConfig', 
 ]
 
 MIDDLEWARE = [
 	'django.middleware.security.SecurityMiddleware',
 	'django.contrib.sessions.middleware.SessionMiddleware',
+	'django.middleware.locale.LocaleMiddleware', 
 	'django.middleware.common.CommonMiddleware',
 	'django.middleware.csrf.CsrfViewMiddleware',
 	'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -110,7 +112,8 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/4.2/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+# LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'en'
 
 TIME_ZONE = 'UTC'
 
@@ -151,3 +154,12 @@ STATIC_ROOT = BASE_DIR / 'static'
 REDIS_HOST = 'localhost'
 REDIS_PORT = 6379
 REDIS_DB = 1
+
+LANGUAGES = [
+	('en', _('English')),
+	('es', _('Spanish')),
+]
+
+LOCALE_PATHS = [
+	BASE_DIR / 'locale',
+]
