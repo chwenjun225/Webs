@@ -14,19 +14,35 @@ Including another URLconf
 	1. Import the include() function: from django.urls import include, path
 	2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
-
+# From framrwork Django APIs
 from django.conf import settings 
 from django.conf.urls.static import static 
 from django.contrib import admin
 from django.urls import path, include 
 
-urlpatterns = [
+# From Stripe APIs
+from payment import webhooks
+
+# Translate and internorlization library
+from django.conf.urls.i18n import i18n_patterns
+from django.utils.translation import gettext_lazy as _
+
+urlpatterns = i18n_patterns(
 	path('admin/', admin.site.urls),
-	path('cart/', include('cart.urls', namespace='cart')),
-	path('orders/', include('orders.urls', namespace='orders')),
-	path('payment/', include('payment.urls', namespace='payment')),
-	path('coupons/', include('coupons.urls', namespace='coupons')),
+	path(_('cart/'), include('cart.urls', namespace='cart')),
+	path(_('orders/'), include('orders.urls', namespace='orders')),
+	path(_('payment/'), include('payment.urls', namespace='payment')),
+	path(_('coupons/'), include('coupons.urls', namespace='coupons')),
+	path('rosetta/', include('rosetta.urls')),
 	path('', include('shop.urls', namespace='shop')),
+)
+
+urlpatterns += [
+	path(
+		'payment/webhook/',
+		webhooks.stripe_webhook,
+		name='stripe-webhook'
+	),
 ]
 
 if settings.DEBUG:

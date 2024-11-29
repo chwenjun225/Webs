@@ -39,6 +39,9 @@ INSTALLED_APPS = [
 	'django.contrib.sessions',
 	'django.contrib.messages',
 	'django.contrib.staticfiles',
+    # Third party, 
+    'rosetta', 
+	# Project SynerSocial
 	'cart.apps.CartConfig',
 	'orders.apps.OrdersConfig',
 	'payment.apps.PaymentConfig', 
