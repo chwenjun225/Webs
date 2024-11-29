@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     # Third party, 
     'rosetta', 
     'parler',
+    'localflavor',
 	# Project SynerSocial
 	'cart.apps.CartConfig',
 	'orders.apps.OrdersConfig',
