@@ -41,6 +41,7 @@ INSTALLED_APPS = [
 	'django.contrib.staticfiles',
     # Third party, 
     'rosetta', 
+    'parler',
 	# Project SynerSocial
 	'cart.apps.CartConfig',
 	'orders.apps.OrdersConfig',
@@ -166,3 +167,15 @@ LANGUAGES = [
 LOCALE_PATHS = [
 	BASE_DIR / 'locale',
 ]
+
+# django-parler settings
+PARLER_LANGUAGES = {
+    None: (
+        {'code': 'en'},
+        {'code': 'es'},
+    ),
+    'default': {
+        'fallback': 'en',
+        'hide_untranslated': False,
+    }
+}
