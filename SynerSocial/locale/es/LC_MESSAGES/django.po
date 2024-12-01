@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-30 00:53+0800\n"
+"POT-Creation-Date: 2024-12-01 17:53+0800\n"
 "PO-Revision-Date: 2024-11-29 16:58+0000\n"
 "Last-Translator:   <>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,11 +19,11 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Translated-Using: django-rosetta 0.10.0\n"
 
-#: SynerSocial/settings.py:162
+#: SynerSocial/settings.py:164
 msgid "English"
 msgstr "Inglés"
 
-#: SynerSocial/settings.py:163
+#: SynerSocial/settings.py:165
 msgid "Spanish"
 msgstr "Español"
 
@@ -40,7 +40,6 @@ msgid "payment/"
 msgstr "pago/"
 
 #: SynerSocial/urls.py:35
-#| msgid "Coupon"
 msgid "coupons/"
 msgstr "Cupón"
 
@@ -68,11 +67,15 @@ msgstr "cancelado/"
 msgid "Syner Social"
 msgstr "Syner Social"
 
-#: shop/templates/shop/base.html:17
+#: shop/templates/shop/base.html:16
+msgid "Language"
+msgstr ""
+
+#: shop/templates/shop/base.html:33
 msgid "Your cart"
 msgstr "Tu carrito"
 
-#: shop/templates/shop/base.html:19
+#: shop/templates/shop/base.html:35
 #, python-format
 msgid ""
 "\n"
@@ -89,7 +92,7 @@ msgstr[1] ""
 "\n"
 "%(items)s productos, $%(total)s"
 
-#: shop/templates/shop/base.html:26
+#: shop/templates/shop/base.html:42
 msgid "Your cart is empty."
 msgstr "Su carrito está vacío."
 

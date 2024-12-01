@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-30 00:53+0800\n"
+"POT-Creation-Date: 2024-12-01 17:53+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,11 +18,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: SynerSocial/settings.py:162
+#: SynerSocial/settings.py:164
 msgid "English"
 msgstr ""
 
-#: SynerSocial/settings.py:163
+#: SynerSocial/settings.py:165
 msgid "Spanish"
 msgstr ""
 
@@ -66,11 +66,15 @@ msgstr ""
 msgid "Syner Social"
 msgstr ""
 
-#: shop/templates/shop/base.html:17
+#: shop/templates/shop/base.html:16
+msgid "Language"
+msgstr ""
+
+#: shop/templates/shop/base.html:33
 msgid "Your cart"
 msgstr ""
 
-#: shop/templates/shop/base.html:19
+#: shop/templates/shop/base.html:35
 #, python-format
 msgid ""
 "\n"
@@ -83,7 +87,7 @@ msgid_plural ""
 msgstr[0] ""
 msgstr[1] ""
 
-#: shop/templates/shop/base.html:26
+#: shop/templates/shop/base.html:42
 msgid "Your cart is empty."
 msgstr ""
 
