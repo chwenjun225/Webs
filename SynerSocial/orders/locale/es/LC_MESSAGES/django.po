@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-30 00:53+0800\n"
+"POT-Creation-Date: 2024-12-01 18:05+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,38 +18,38 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: orders/models.py:11
+#: orders/models.py:12
 msgid "first name"
 msgstr "nombre"
 
-#: orders/models.py:12
+#: orders/models.py:13
 msgid "last name"
 msgstr "apellidos"
 
-#: orders/models.py:13
+#: orders/models.py:14
 msgid "e-mail"
 msgstr "e-mail"
 
-#: orders/models.py:14
+#: orders/models.py:15
 msgid "address"
 msgstr "dirección"
 
-#: orders/models.py:15
+#: orders/models.py:16
 msgid "postal code"
 msgstr "código postal"
 
-#: orders/models.py:16
+#: orders/models.py:17
 msgid "city"
 msgstr "ciudad"
 
 #: orders/templates/orders/order/create.html:5
 #: orders/templates/orders/order/create.html:9
 msgid "Checkout"
-msgstr ""
+msgstr "Verificar"
 
 #: orders/templates/orders/order/create.html:12
 msgid "Your order"
-msgstr ""
+msgstr "Su pedido"
 
 #: orders/templates/orders/order/create.html:24
 #, python-format
@@ -58,15 +58,18 @@ msgid ""
 "\t\t\t\t\t\t\"%(code)s\" (%(discount)s%% off)\n"
 "\t\t\t\t\t"
 msgstr ""
+"\n"
+"\t\t\t\t\t\t\"%(código)s\" (%(descuento)s%% de descuento)\n"
+"\t\t\t\t\t"
 
 #: orders/templates/orders/order/create.html:30
 msgid "Total"
-msgstr ""
+msgstr "Total"
 
 #: orders/templates/orders/order/create.html:34
 msgid "Place order"
-msgstr ""
+msgstr "Realizar pedido"
 
 #: orders/urls.py:8
 msgid "create/"
-msgstr ""
+msgstr "crear/"

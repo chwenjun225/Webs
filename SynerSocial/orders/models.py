@@ -1,4 +1,5 @@
 from decimal import Decimal
+
 from django.core.validators import MaxValueValidator, MinValueValidator
 from django.conf import settings
 from django.db import models
@@ -77,4 +78,3 @@ class OrderItem(models.Model):
 		return str(self.id)
 	def get_cost(self):
 		return self.price * self.quantity
-	
