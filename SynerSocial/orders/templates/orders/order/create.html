@@ -19,16 +19,13 @@
 			{% endfor %}
 			{% if cart.coupon %}
 				<li>
-					<!-- "{{ cart.coupon.code }}" ({{ cart.coupon.discount }}% off)
-					<span class="neg">- ${{ cart.get_discount|floatformat:2 }}</span> -->
 					{% blocktranslate with code=cart.coupon.code discount=cart.coupon.discount %}
 						"{{ code }}" ({{ discount }}% off)
 					{% endblocktranslate %}
 				</li>
 			{% endif %}
 		</ul>
-		<p>{% translate "Total" %}: ${{ 
-			cart.get_total_price_after_discount|floatformat:2 }}</p>
+		<p>{% translate "Total" %}: ${{ cart.get_total_price_after_discount|floatformat:2 }}</p>
 	</div>
 	<form method="post" class="order-form">
 		{{ form.as_p }}
