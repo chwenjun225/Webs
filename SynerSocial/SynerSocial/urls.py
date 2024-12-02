@@ -23,17 +23,20 @@ from django.urls import path, include
 # From Stripe APIs
 from payment import webhooks
 
-# Translate and internorlization library
+# Translate and internalization library
 from django.conf.urls.i18n import i18n_patterns
 from django.utils.translation import gettext_lazy as _
 
 urlpatterns = i18n_patterns(
+	# From 3rdparty
+	path('rosetta/', include('rosetta.urls')),
+	# Project SynerSocial
 	path('admin/', admin.site.urls),
+	path(_('account/'), include('account.urls', namespace='account')), 
 	path(_('cart/'), include('cart.urls', namespace='cart')),
 	path(_('orders/'), include('orders.urls', namespace='orders')),
 	path(_('payment/'), include('payment.urls', namespace='payment')),
 	path(_('coupons/'), include('coupons.urls', namespace='coupons')),
-	path('rosetta/', include('rosetta.urls')),
 	path('', include('shop.urls', namespace='shop')),
 )
 
