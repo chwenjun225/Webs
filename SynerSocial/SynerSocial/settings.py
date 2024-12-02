@@ -44,6 +44,7 @@ INSTALLED_APPS = [
 	'parler',
 	'localflavor',
 	# Project SynerSocial
+    'account.apps.AccountConfig', 
 	'cart.apps.CartConfig',
 	'orders.apps.OrdersConfig',
 	'payment.apps.PaymentConfig', 
