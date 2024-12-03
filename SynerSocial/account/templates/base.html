@@ -16,20 +16,20 @@
 				<p>{% translate "Language" %}:</p>
 				<ul class="languages">
 					{% for language in languages %}
-					<li>
-						<a href="/{{ language.code }}/" 
-							{% if language.code == LANGUAGE_CODE %} 
-							class="selected" {% endif %}>
-							{{ language.name_local }}
-						</a>
-					</li>
+						<li>
+							<a href="/{{ language.code }}/" 
+								{% if language.code == LANGUAGE_CODE %} 
+								class="selected" {% endif %}>
+								{{ language.name_local }}
+							</a>
+						</li>
 					{% endfor %}
 				</ul>
 			</div>
 			{% if request.user.is_authenticated %}
 				<ul class="menu">
 					<li {% if section == "dashboard" %}class="selected"{% endif %}>
-						<a href="{% url "dashboard" %}">My dashboard</a>
+						<a href="{% url "account:dashboard" %}">My dashboard</a>
 					</li>
 					<li {% if section == "images" %}class="selected"{% endif %}>
 						<a href="#">Images</a>
@@ -42,7 +42,7 @@
 			<span class="user">
 				{% if request.user.is_authenticated %}
 					Hello {{ request.user.first_name|default:request.user.username }},
-					<form action="{% url "logout" %}" method="post">
+					<form action="{% url "account:logout" %}" method="post">
 						<button type="submit">Logout</button>
 						{% csrf_token %}
 					</form>

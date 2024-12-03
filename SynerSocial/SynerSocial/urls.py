@@ -33,7 +33,7 @@ urlpatterns = i18n_patterns(
 	############ Project SynerSocial ###########
 	path('admin/', admin.site.urls),
 	############### account ####################
-	path('', include('account.urls', namespace='account')), 
+	path('', include('account.urls')), 
 	############### shop #######################
 	path(_('shop/'), include('shop.urls', namespace='product_list')),
 	path(_('cart/'), include('cart.urls', namespace='cart')),
