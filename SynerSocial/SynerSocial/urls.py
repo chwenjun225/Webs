@@ -37,7 +37,7 @@ urlpatterns = i18n_patterns(
 	path(_('orders/'), include('orders.urls', namespace='orders')),
 	path(_('payment/'), include('payment.urls', namespace='payment')),
 	path(_('coupons/'), include('coupons.urls', namespace='coupons')),
-	path(_('product_list/'), include('shop.urls', namespace='shop')),
+	path(_('shop/'), include('shop.urls', namespace='product_list')),
 	path('', include('account.urls', namespace='account')), 
 )
 
@@ -45,7 +45,7 @@ urlpatterns += [
 	path(
 		'payment/webhook/',
 		webhooks.stripe_webhook,
-		name='stripe-webhook'
+		name='stripe-webhook', 
 	),
 ]
 
