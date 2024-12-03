@@ -1,3 +1,6 @@
+# Task:
+https://learning.oreilly.com/library/view/django-5-by/9781805125457/Text/Chapter_04.xhtml#_idParaDest-150
+
 # Running commands:
 docker run -it --rm --name rabbitmq -p 5672:5672 -p 15672:15672 rabbitmq:3.13.1-management
 
