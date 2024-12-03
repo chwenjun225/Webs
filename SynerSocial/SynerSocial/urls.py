@@ -28,17 +28,18 @@ from django.conf.urls.i18n import i18n_patterns
 from django.utils.translation import gettext_lazy as _
 
 urlpatterns = i18n_patterns(
-	# From 3rdparty
+	############ from_3rdparty #################
 	path('rosetta/', include('rosetta.urls')),
-	# Project SynerSocial
+	############ Project SynerSocial ###########
 	path('admin/', admin.site.urls),
-	path(_('account/'), include('account.urls', namespace='account')), 
+	############### account ####################
+	path('', include('account.urls', namespace='account')), 
+	############### shop #######################
+	path(_('shop/'), include('shop.urls', namespace='product_list')),
 	path(_('cart/'), include('cart.urls', namespace='cart')),
 	path(_('orders/'), include('orders.urls', namespace='orders')),
 	path(_('payment/'), include('payment.urls', namespace='payment')),
 	path(_('coupons/'), include('coupons.urls', namespace='coupons')),
-	path(_('shop/'), include('shop.urls', namespace='product_list')),
-	path('', include('account.urls', namespace='account')), 
 )
 
 urlpatterns += [
