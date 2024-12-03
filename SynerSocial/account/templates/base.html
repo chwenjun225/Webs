@@ -25,17 +25,17 @@
 			{% endif %}
 			<span class="user">
 				{% if request.user.is_authenticated %}
-					Hello {{ request.user.first_name|default:request.user.username }},
+					{% translate "Hello" %} {{ request.user.first_name|default:request.user.username }}, 
 					<form action="{% url "logout" %}" method="post">
 						<button type="submit">Logout</button>
 						{% csrf_token %}
 					</form>
 				{% else %}
-					<a href="{% url "login" %}">Log-in</a>
+					<a href="{% url "dashboard" %}">Log-in</a>
 				{% endif %}
 			</span>
 			<!-- Internalization translate language -->
-			{% get_current_language as LANGUAGE_CODE %}
+			<!-- {% get_current_language as LANGUAGE_CODE %}
 			{% get_available_languages as LANGUAGES %}
 			{% get_language_info_list for LANGUAGES as languages %}
 			<div class="languages">
@@ -51,10 +51,10 @@
 						</li>
 					{% endfor %}
 				</ul>
-			</div>
+			</div> -->
 		</div>
 		<!-- Cart -->
-		<div id="subheader">
+		<!-- <div id="subheader">
 			<div class="cart">
 				{% with total_items=cart|length %}
 					{% if total_items > 0 %}
@@ -71,7 +71,7 @@
 					{% endif %}
 				{% endwith %}
 			</div>
-		</div>
+		</div> -->
 		<div id="content">
 			{% block content %}
 			{% endblock %}

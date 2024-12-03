@@ -7,7 +7,8 @@ body {
 }
 
 h1, h2, h3, h4, h5 , h6 {
-	font-family: sans-serif; font-weight:normal;
+	font-family: sans-serif; 
+	font-weight:normal;
 }
 
 a {
@@ -122,13 +123,6 @@ ul.errorlist {
 	overflow:auto;
 }
 
-#subheader {
-	background:#ececec;
-	color:#444;
-	padding:15px 100px;
-	overflow:auto;
-}
-
 #header .logo {
 	font-family: 'Ubuntu', sans-serif;
 	float:left;
@@ -138,7 +132,6 @@ ul.errorlist {
 }
 
 #header ul.menu {
-	font-family: sans-serif;
 	list-style:none;
 	float:left;
 	margin:0;
@@ -149,8 +142,32 @@ ul.errorlist {
 	padding:4px 10px;
 }
 
-#header ul.menu li.selected a {
+#header ul.menu li.selected a, #header ul.menu li.selected a:hover {
 	color:#5993bb;
+}
+
+#header .user {
+	float:right;
+	padding-top:4px;
+}
+
+#header .user form {
+	display:inline;
+	float:right;
+}
+
+#header .user button {
+	background: none;
+	color: #5993bb;
+	border: none; 
+	cursor: pointer;
+}
+
+#subheader {
+	background:#ececec;
+	color:#444;
+	padding:15px 100px;
+	overflow:auto;
 }
 
 #subheader .cart {
