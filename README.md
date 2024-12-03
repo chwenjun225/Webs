@@ -1,11 +1,13 @@
-# Run commands:
+# Running commands:
 docker run -it --rm --name rabbitmq -p 5672:5672 -p 15672:15672 rabbitmq:3.13.1-management
 
 celery -A SynerSocial worker -l info
 
+docker run -it --rm --name redis -p 6379:6379 redis:7.2.4
+
 stripe listen --forward-to localhost:8000/payment/webhook/
 
-docker run -it --rm --name redis -p 6379:6379 redis:7.2.4
+python manage.py runserver
 
 # Bug logs:
 1. ✔ Error when translate to Spain language (https://learning.oreilly.com/library/view/django-5-by/9781805125457/Text/Chapter_11.xhtml#_idParaDest-327)
