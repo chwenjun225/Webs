@@ -7,7 +7,7 @@ body {
 }
 
 h1, h2, h3, h4, h5 , h6 {
-	font-family: 'Ubuntu', sans-serif; font-weight:normal;
+	font-family: sans-serif; font-weight:normal;
 }
 
 a {
@@ -135,6 +135,22 @@ ul.errorlist {
 	color:#333;
 	font-size:22px;
 	margin-right:10%;
+}
+
+#header ul.menu {
+	font-family: sans-serif;
+	list-style:none;
+	float:left;
+	margin:0;
+	padding:0;
+}
+#header ul.menu li {
+	float:left;
+	padding:4px 10px;
+}
+
+#header ul.menu li.selected a {
+	color:#5993bb;
 }
 
 #subheader .cart {
