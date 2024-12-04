@@ -143,9 +143,8 @@ MEDIA_ROOT = BASE_DIR / 'media'
 
 CART_SESSION_ID = 'cart'
 
-# If you don’t want to set up email settings, you can tell Django to write 
-# emails to the console by adding the following setting to the settings.py 
-# file.
+# If you don’t want to set up email settings, you can tell Django to write emails 
+# to the console by adding the following setting to the settings.py file.
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 STRIPE_PUBLISHABLE_KEY = config('STRIPE_PUBLISHABLE_KEY')
