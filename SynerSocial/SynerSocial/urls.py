@@ -33,7 +33,7 @@ urlpatterns = i18n_patterns(
 	############ Project SynerSocial ###########
 	path('admin/', admin.site.urls),
 	############### account ####################
-	path('account/', include('account.urls')), # Để truy cập vào trang web trước tiên cần phải có tài khoản 
+	path('account/', include('account.urls')), 
 	############### shop #######################
 	path(_('shop/'), include('shop.urls', namespace='product_list')),
 	path(_('cart/'), include('cart.urls', namespace='cart')),

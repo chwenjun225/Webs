@@ -8,7 +8,7 @@
 </head>
 <body>
 	<div id="header">
-		<a href="/" class="logo">{% translate "Syner Social" %}</a>
+		<a href="#" class="logo">{% translate "Syner Social" %}</a>
 		<!-- User authentication -->
 		{% if request.user.is_authenticated %}
 			<ul class="menu">
@@ -53,6 +53,16 @@
 			</ul>
 		</div> -->
 	</div>
+	{% if messages %}
+    <ul class="messages">
+		{% for message in messages %}
+			<li class="{{ message.tags }}">
+			{{ message|safe }}
+			<a href="#" class="close">x</a>
+			</li>
+		{% endfor %}
+		</ul>
+	{% endif %}
 	<!-- Cart -->
 	<!-- <div id="subheader">
 		<div class="cart">
