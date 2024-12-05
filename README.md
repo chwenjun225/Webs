@@ -1,5 +1,6 @@
 # Working:
-https://learning.oreilly.com/library/view/django-5-by/9781805125457/Text/Chapter_04.xhtml#_idParaDest-150
+- https://learning.oreilly.com/library/view/django-5-by/9781805125457/Text/Chapter_02.xhtml#_idParaDest-109
+- https://learning.oreilly.com/library/view/django-5-by/9781805125457/Text/Chapter_04.xhtml#_idParaDest-150
 
 # Running commands:
 docker run -it --rm --name rabbitmq -p 5672:5672 -p 15672:15672 rabbitmq:3.13.1-management
@@ -38,3 +39,38 @@ Python Path:
  '/home/chwenjun225/miniconda3/envs/Webs/lib/python3.9/site-packages']
 Server time:	Sun, 01 Dec 2024 16:35:56 +0000
 ```
+
+# Dự án Foxer (AI-Agent)
+### **Phân tích các bước công việc yêu cầu**
+1. **Lập kế hoạch và ưu tiên các tác vụ:**
+   - **Giai đoạn 1:** Nhắc nhở qua WeChat và email, tự động tải xuống và chấm điểm báo cáo.
+   - **Giai đoạn 2:** Tự động tạo PPT báo cáo, gửi báo cáo cho giám đốc.
+   - **Giai đoạn 3:** Quản lý điểm số và điểm danh qua Webex.
+
+2. **Các công nghệ cần áp dụng:**
+   - **Quản lý thông báo và nhắc nhở:** Sử dụng API của WeChat, email server.
+   - **Xử lý báo cáo:** Tích hợp xử lý ngôn ngữ tự nhiên (NLP) để chấm điểm báo cáo.
+   - **Tự động tạo PPT:** Dùng Python với thư viện như `python-pptx`.
+   - **Quản lý cuộc họp:** API của Webex để thu thập danh sách tham dự và bảng điểm.
+
+3. **Mô hình AI Agent:**
+   - **Logic điều khiển:** Kết hợp giữa tác nhân dựa trên quy tắc và AI học máy (Machine Learning).
+   - **Chấm điểm thông minh:** Finetune LLaMA để phân tích ngữ cảnh và đánh giá nội dung báo cáo.
+
+### **Kế hoạch phát triển**
+- **Giai đoạn 1:** 
+  - Phát triển module nhắc nhở và thu thập báo cáo.
+  - Tích hợp công cụ xử lý ngôn ngữ tự nhiên để chấm điểm tự động.
+- **Giai đoạn 2:**
+  - Tạo và tự động hóa quy trình làm PPT báo cáo.
+  - Gửi báo cáo cho giám đốc và xử lý phản hồi.
+- **Giai đoạn 3:**
+  - Triển khai module quản lý điểm số và điểm danh.
+  - Đánh giá hiệu quả và điều chỉnh.
+
+### **Lợi ích dài hạn**
+- Giảm tải công việc hành chính, giúp nhân viên tập trung vào nhiệm vụ quan trọng hơn.
+- Tăng cường độ chính xác và nhất quán trong việc quản lý báo cáo và cuộc họp.
+- Tối ưu hóa chi phí vận hành, mang lại giá trị kinh tế rõ rệt.
+
+Bạn có muốn tập trung vào bước nào trước hay cần hỗ trợ thêm phần chi tiết nào không? 😊
