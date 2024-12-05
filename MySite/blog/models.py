@@ -1,3 +1,4 @@
+from taggit.managers import TaggableManager
 from django.conf import settings
 from django.db import models
 from django.urls import reverse 
@@ -35,6 +36,7 @@ class Post(models.Model):
 	)
 	objects = models.Manager() # The default manager.
 	published = PublishedManager() # Our custom manager.
+	tags = TaggableManager()
 	class Meta:
 		ordering = ['-publish']
 		indexes = [
