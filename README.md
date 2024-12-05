@@ -3,15 +3,9 @@
 - https://learning.oreilly.com/library/view/django-5-by/9781805125457/Text/Chapter_04.xhtml#_idParaDest-150
 
 # Running commands:
-docker run -it --rm --name rabbitmq -p 5672:5672 -p 15672:15672 rabbitmq:3.13.1-management
-
-docker run -it --rm --name redis -p 6379:6379 redis:7.2.4
-
-celery -A SynerSocial worker -l info
-
-stripe listen --forward-to localhost:8000/payment/webhook/
-
+## MySite
 python manage.py runserver
+docker run --name=blog_db -e POSRGRES_DB=blog -e POSTGRES_USER=blog -e POSTGRES_PASSWORD=P00778076 -p 5432:5432 -d postgres:16.2
 
 # Bug logs:
 1. ✔ Error when translate to Spain language (https://learning.oreilly.com/library/view/django-5-by/9781805125457/Text/Chapter_11.xhtml#_idParaDest-327)
