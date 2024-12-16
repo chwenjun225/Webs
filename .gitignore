@@ -3,6 +3,7 @@
 *.key
 media/
 from_3rdparty/
+plot_ms/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
