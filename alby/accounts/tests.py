@@ -6,7 +6,7 @@ from tracdb.models import Revision, Ticket, TicketChange
 from tracdb.testutils import TracDBCreateDatabaseMixin
 
 
-@override_settings(TRAC_URL="https://code.djangoproject.com/")
+@override_settings(TRAC_URL="https://alby.com/")
 class UserProfileTests(TracDBCreateDatabaseMixin, TestCase):
     databases = {"default", "trac"}
 
