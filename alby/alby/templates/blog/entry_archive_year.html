@@ -1,0 +1,22 @@
+{% extends "base_weblog.html" %}
+{% load i18n %}
+
+{% block title %}{{ year|date:"Y" }} | {% translate "Weblog" %}{% endblock %}
+
+{% block og_title %}{% blocktranslate with year=year|date:"Y" %}Django news: {{ year }} archive{% endblocktranslate %}{% endblock %}
+
+{% block content %}
+
+  <h1>{{ year|date:"Y" }} {% translate "archive" %}</h1>
+
+  <ul class="list-news">
+
+    {% for object in object_list %}
+      {% include 'blog/news_summary.html' with object=object %}
+    {% endfor %}
+
+  </ul>
+
+  {% include 'blog/blog_pagination.html' %}
+
+{% endblock %}

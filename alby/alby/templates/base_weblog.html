@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+{% load fundraising_extras i18n weblog %}
+{% block layout_class %}sidebar-right{% endblock %}
+{% block title %}{% translate "News &amp; Events" %}{% endblock %}
+
+{% block og_title %}{% translate "News &amp; Events" %}{% endblock %}
+
+{% block header %}
+  <h1><a href="{% url 'weblog:index' %}">{% translate "News &amp; Events" %}</a></h1>
+{% endblock %}
+
+{% block head_extra %}
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="{% url 'weblog-feed' %}" />
+{% endblock %}
+
+{% block content-related %}
+  <h1 class="visuallyhidden">{% translate "Additional Information" %}</h1>
+  <div role="complementary">
+    {% donation_snippet %}
+
+    {% if events %}
+      <h2>{% translate "Upcoming Events" %}</h2>
+      <ul class="list-events">
+        {% for event in events %}
+          <li>
+            <a href="{{ event.external_url }}" target="_blank">{{ event.headline }}</a>
+            <span class="meta"><span>{{ event.date|date:"DATE_FORMAT" }}</span>  |  {{ event.location }}</span>
+            <i class="icon icon-calendar"></i>
+          </li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+    <p><a href="/foundation/conferences/">{% translate "Want your event listed here?" %}</a></p>
+
+    {% comment %}
+    {# tags not implemented in backend yet #}
+    <h2><span>Tags</span></h2>
+    <ul class="list-tags">
+      <li><a href="#">Django Software Foundation</a></li>
+      <li><a href="#">Events</a></li>
+      <li><a href="#">Conferences</a></li>
+      <li><a href="#">Release Announcements</a></li>
+      <li><a href="#">Security</a></li>
+    </ul>
+    {% endcomment %}
+
+    <h2><span>{% translate "Archives" %}</span></h2>
+    {% render_month_links %}
+
+    <h2><span>{% translate "RSS Feeds" %}</span></h2>
+    <ul class="list-links-small rss-list">
+      <li><a href="{% url 'weblog-feed' %}">{% translate "Latest news entries" %}</a></li>
+      <li><a href="https://code.djangoproject.com/timeline?daysback=90&max=50&wiki=on&ticket=on&changeset=on&milestone=on&format=rss">{% translate "Recent code changes" %}</a></li>
+    </ul>
+  </div>
+{% endblock %}

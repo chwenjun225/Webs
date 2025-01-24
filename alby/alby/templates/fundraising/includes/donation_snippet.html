@@ -1,0 +1,22 @@
+{% load humanize i18n static %}
+
+{% if donation %}
+  <div class="fundraising-sidebar">
+    <h2>{% translate "Support Django!" %}</h2>
+
+    <div class="small-heart">
+      <img src="{% static "img/fundraising-heart.svg" %}" alt="Support Django!" />
+    </div>
+
+    <div class="small-cta">
+      <ul class="list-links-small">
+        <li><a href="{% url "fundraising:index" %}">
+          {% blocktranslate trimmed with name=donation.name %}
+            {{ name }} donated to the Django Software Foundation to
+            support Django development. Donate today!
+          {% endblocktranslate %}
+        </a></li>
+      </ul>
+    </div>
+  </div>
+{% endif %}

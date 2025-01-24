@@ -1,0 +1,37 @@
+services:
+    web:
+        build:
+            context: ./
+            dockerfile: Dockerfile
+            args:
+                - REQ_FILE=requirements/tests.txt
+        entrypoint: ./docker-entrypoint.dev.sh
+        command: python manage.py runserver 0.0.0.0:8000
+        volumes:
+            - .:/usr/src/app/
+        ports:
+            - 8000:8000
+        environment:
+            - SECRET_KEY=foo
+            - DJANGOPROJECT_DATA_DIR=./data
+            - DJANGO_SETTINGS_MODULE=djangoproject.settings.docker
+            - SQL_ENGINE=django.db.backends.postgresql
+            - SQL_DATABASE=djangoproject
+            - SQL_USER=djangoproject
+            - SQL_PASSWORD=secret
+            - SQL_HOST=db
+            - SQL_PORT=5432
+        depends_on:
+            db:
+                condition: service_healthy
+    db:
+        image: postgres:14-alpine
+        environment:
+            - POSTGRES_USER=djangoproject
+            - POSTGRES_PASSWORD=secret
+            - POSTGRES_DB=djangoproject
+        healthcheck:
+            test: ["CMD", "pg_isready", "--host", "db", "--port", "5432"]
+            interval: 1s
+            timeout: 10s
+            retries: 10

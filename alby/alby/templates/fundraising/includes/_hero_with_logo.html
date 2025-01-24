@@ -1,0 +1,26 @@
+{% load i18n static thumbnail %}
+<div class="hero">
+  <div class="hero-logo">
+    {% if obj.url %}<a href="{{ obj.url }}" rel="nofollow">{% endif %}
+    {% if obj.logo %}
+      <img
+        src="{{ obj.thumbnail.url }}"
+        srcset="{{ obj.thumbnail.url|resolution:'2x' }} 2x"
+        width="{{ obj.thumbnail.width }}"
+        height="{{ obj.thumbnail.height }}"
+        loading="lazy"
+        alt="{% blocktranslate trimmed with company_name=obj.display_name %}
+               Logo of company {{ company_name }}{% endblocktranslate %}"
+      >
+    {% else %}
+      <img src="{% static 'img/fundraising-heart.svg' %}" alt="{% translate 'Pixelated heart logo' %}">
+    {% endif %}
+    {% if obj.url %}</a>{% endif %}
+  </div>
+  <div class="hero-name">
+    {% if obj.url %}<a href="{{ obj.url }}" rel="nofollow">{% endif %}{% spaceless %}
+      {{ obj.display_name }}
+    {% endspaceless %}{% if obj.url %}</a>{% endif %}
+    {% if show_description %}{{ obj.description }}{% endif %}
+  </div>
+</div>

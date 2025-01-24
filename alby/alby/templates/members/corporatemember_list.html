@@ -1,0 +1,68 @@
+{% extends "base_foundation.html" %}
+{% load humanize i18n %}
+
+{% block og_title %}{% translate "Corporate members" %}{% endblock %}
+{% block og_description %}{% translate "The following organizations are corporate members of the Django Software Foundation." %}{% endblock %}
+
+{% block content %}
+  <h1>{% translate "Corporate members" %}</h1>
+  <p>
+    {% blocktranslate trimmed %}
+      The following organizations are corporate members of the Django Software
+      Foundation. If you are interested in becoming a corporate member of the
+      DSF, you can find out more on our <a href="/foundation/corporate-membership/">
+        corporate membership page</a>.
+    {% endblocktranslate %}
+  </p>
+
+  {% if members.diamond %}
+    <h3>{% blocktranslate trimmed with amount=corporate_membership_amounts.diamond|intcomma %}
+      Diamond Corporate Members (${{ amount }}+){% endblocktranslate %}</h3>
+    <ul class="corporate-members">
+      {% for obj in members.diamond %}
+        {% include "members/includes/_member_with_logo.html" %}
+      {% endfor %}
+    </ul>
+  {% endif %}
+
+  {% if members.platinum %}
+    <h3>{% blocktranslate trimmed with amount=corporate_membership_amounts.platinum|intcomma %}
+      Platinum Corporate Members (${{ amount }}+){% endblocktranslate %}</h3>
+    <ul class="corporate-members">
+      {% for obj in members.platinum %}
+        {% include "members/includes/_member_with_logo.html" %}
+      {% endfor %}
+    </ul>
+  {% endif %}
+
+  {% if members.gold %}
+    <h3>{% blocktranslate trimmed with amount=corporate_membership_amounts.gold|intcomma %}
+      Gold Corporate Members (${{ amount }}+){% endblocktranslate %}</h3>
+    <ul class="corporate-members">
+      {% for obj in members.gold %}
+        {% include "members/includes/_member_with_logo.html" %}
+      {% endfor %}
+    </ul>
+  {% endif %}
+
+  {% if members.silver %}
+    <h3>{% blocktranslate trimmed with amount=corporate_membership_amounts.silver|intcomma %}
+      Silver Corporate Members (${{ amount }}+){% endblocktranslate %}</h3>
+    <ul class="corporate-members">
+      {% for obj in members.silver %}
+        {% include "members/includes/_member_with_logo.html" %}
+      {% endfor %}
+    </ul>
+  {% endif %}
+
+  {% if members.bronze %}
+    <h3>{% blocktranslate trimmed with amount=corporate_membership_amounts.bronze|intcomma %}
+      Bronze Corporate Members (${{ amount }}+){% endblocktranslate %}</h3>
+    <ul class="corporate-members">
+      {% for obj in members.bronze %}
+        {% include "members/includes/_member_with_logo.html" %}
+      {% endfor %}
+    </ul>
+  {% endif %}
+
+{% endblock %}
